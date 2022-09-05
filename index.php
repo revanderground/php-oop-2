@@ -30,8 +30,20 @@ $altalena = new Toy ('altalena', 'pappagallo', 'Nobleza', '14.99', 'cotone', 'Sp
 $luciodalla= new Guest ('Lucio','Dalla', "luciodalla@email.com",'#25');
 $card1 = new Card("Lucio Dalla", "2873847934", "2024-12-10", 234);
 
-var_dump())
+
+var_dump($croccantini);
+
+var_dump($cuccia);
+
+var_dump($altalena);
+
+var_dump($luciodalla);
+
+var_dump($card1);
+
+
 
 
 ?>
+
 
