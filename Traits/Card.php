@@ -1,6 +1,6 @@
 <?php
 
-   class Card{
+   trait Card{
       private $owner;
       private $number;
       private $expirationDate;
@@ -15,7 +15,7 @@
       }
 
     
-      public function getOwner(){
+    public function getOwner(){
         return $this->owner;
     }
 

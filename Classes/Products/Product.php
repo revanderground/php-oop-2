@@ -1,5 +1,6 @@
 <?php 
 
+require_once __DIR__ . '/../../Traits/DisposalInstructions.php';
 class Product {
 
     protected $product_name;
@@ -7,6 +8,8 @@ class Product {
     protected $brand; 
     protected $price = 0;
     protected $id; 
+
+    use DisposalInstruction;
 
 
     public function __construct($_product_name, $_animal, $_brand, $_price, $_id) {

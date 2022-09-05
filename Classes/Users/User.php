@@ -1,6 +1,6 @@
 <?php
 
-
+require_once __DIR__ . '/../../Traits/Card.php';
 
 class User {
     protected $name;
@@ -8,7 +8,8 @@ class User {
     protected $email;
     protected $id;
     protected $discount = 0;
-    protected $expirationDate;
+
+    use Card;
 
     protected $cart= [];
 
