@@ -12,10 +12,10 @@
 // Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo particolare (es. da maggio ad agosto).
 
 
-include_once __DIR__ . '/Classes/Product.php';
-include_once __DIR__ . '/Classes/User.php';
-include_once __DIR__ . '/Classes/UnregisteredUser.php';
-include_once __DIR__ . '/Classes/RegisteredUser.php';
+include_once __DIR__ . '/Classes/Products/Product.php';
+include_once __DIR__ . '/Classes/Users/User.php';
+include_once __DIR__ . '/Classes/Users/RegisteredUser.php';
+include_once __DIR__ . '/Classes/Users/UnregisteredUser.php';
 
 $prodotto= new Product("cuccia", "cane", "trudi", 23 );
 var_dump($prodotto);

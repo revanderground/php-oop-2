@@ -6,13 +6,15 @@ class Product {
     protected $animal;
     protected $brand; 
     protected $price = 0;
+    protected $id; 
 
 
-    public function __construct($_product_name, $_animal, $_brand, $_price) {
+    public function __construct($_product_name, $_animal, $_brand, $_price, $_id) {
         $this->product_name = $_product_name;
         $this->animal = $_animal;
         $this->brand = $_brand;
         $this->price = $_price;
+        $this->price = $_id;   
     }
 
     
@@ -32,6 +34,10 @@ class Product {
         return $this->price;
     }    
 
+    public function getId() {
+        return $this->id;
+    }    
+
     public function setProductName($_product_name){
         $this->product_name = $_product_name;
     }    
@@ -46,6 +52,10 @@ class Product {
 
     public function setPrice($_price){
         $this->product_name = $_price;
+    }    
+
+    public function setId($_id){
+        $this->product_name = $_id;
     }    
 
 
