@@ -14,7 +14,7 @@ class Product {
         $this->animal = $_animal;
         $this->brand = $_brand;
         $this->price = $_price;
-        $this->price = $_id;   
+        $this->id = $_id;   
     }
 
     

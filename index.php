@@ -13,15 +13,21 @@
 
 
 include_once __DIR__ . '/Classes/Products/Product.php';
+include_once __DIR__ . '/Classes/Products/Food.php';
+include_once __DIR__ . '/Classes/Products/House.php';
+include_once __DIR__ . '/Classes/Products/Toy.php';
 include_once __DIR__ . '/Classes/Users/User.php';
 include_once __DIR__ . '/Classes/Users/RegisteredUser.php';
 include_once __DIR__ . '/Classes/Users/UnregisteredUser.php';
 
-$prodotto= new Product("cuccia", "cane", "trudi", 23 );
+
+$prodotto= new Product("cuccia", "cane", "trudi", 23 , 5876786868);
 var_dump($prodotto);
 $pippo = new Member("ciao", "bello", "akdjkdjsk@jdadjksd.com", 3873684, "gjhgj", "gjhgj");    
 var_dump($pippo);
 
+$pappina = new Food("d","gatto","djksjd", 25, 2938293, "jdkjsdk", "dksdksld",67, "2020-19-23",56);    
+var_dump($pappina);
 
 ?>
 
