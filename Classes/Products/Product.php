@@ -3,13 +3,12 @@
 require_once __DIR__ . '/../../Traits/DisposalInstructions.php';
 class Product {
 
+    use DisposalInstruction;
     protected $product_name;
     protected $animal;
     protected $brand; 
     protected $price = 0;
     protected $id; 
-
-    use DisposalInstruction;
 
 
     public function __construct($_product_name, $_animal, $_brand, $_price, $_id) {
@@ -62,6 +61,10 @@ class Product {
     }    
 
 
+
+    
 }
+
+
 
 ?>

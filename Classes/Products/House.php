@@ -10,7 +10,7 @@ class House extends Product{
 
     public function __construct($_product_name, $_animal, $_brand, $_price, $_materials, $_length, $_height, $_color)
     {
-        parent::__construct($_product_name, $_animal, $_brand, $_price);
+        parent:: __construct($_product_name, $_animal, $_brand, $_price);
         $this->materials = $_materials;
         $this->length = $_length;
         $this->height = $_height;

@@ -12,37 +12,24 @@
 // Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo particolare (es. da maggio ad agosto).
 
 
+
 include_once __DIR__ . '/Classes/Products/Product.php';
-include_once __DIR__ . '/Classes/Products/Food.php';
 include_once __DIR__ . '/Classes/Products/House.php';
+include_once __DIR__ . '/Classes/Products/Food.php';
 include_once __DIR__ . '/Classes/Products/Toy.php';
 include_once __DIR__ . '/Classes/Users/User.php';
 include_once __DIR__ . '/Classes/Users/RegisteredUser.php';
 include_once __DIR__ . '/Classes/Users/UnregisteredUser.php';
+include_once __DIR__ . '/Traits/Card.php';
+include_once __DIR__ . '/Traits/DisposalInstructions.php';
 
 
-$prodotto= new Product("cuccia", "cane", "trudi", 23 , 5876786868);
-var_dump($prodotto);
-$pippo = new Member("ciao", "bello", "akdjkdjsk@jdadjksd.com", 3873684, "gjhgj", "gjhgj");    
-var_dump($pippo);
+$croccantini = new Food("croccantini", "cani", "monge", 45.90, "#12", "dog food", "Salmone e Riso", "adult", "2023-15-14", "12kg" );
+$cuccia= new House('cuccia', 'gatto','LOVEDI','15.99', 'silicone imbottito', '50cm', '60cm', 'blue' );
+$altalena = new Toy ('altalena', 'pappagallo', 'Nobleza', '14.99', 'cotone', 'Spagna', 'multicolore');
+$luciodalla= new Guest ('Lucio','Dalla', "luciodalla@email.com",'#25');
+$card1 = new Card('Lucio Dalla', '2834729849', "2025-10-12", 111); 
 
-$pappina = new Food("d","gatto","djksjd", 25, 2938293, "jdkjsdk", "dksdksld",67, "2020-19-23",56);    
-var_dump($pappina);
 
 ?>
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Animal Shop</title>
-</head>
-<body>
-
-</body>
-</html>
