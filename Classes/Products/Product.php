@@ -1,22 +1,23 @@
 <?php 
 
-require_once __DIR__ . '/../../Traits/DisposalInstructions.php';
+require_once __DIR__ . '/../../Traits/codeID.php';
+
 class Product {
 
-    use DisposalInstruction;
+    use CodeID;
     protected $product_name;
     protected $animal;
     protected $brand; 
     protected $price = 0;
-    protected $id; 
 
 
-    public function __construct($_product_name, $_animal, $_brand, $_price, $_id) {
+
+    public function __construct($_product_name, $_animal, $_brand, $_price) {
         $this->product_name = $_product_name;
         $this->animal = $_animal;
         $this->brand = $_brand;
         $this->price = $_price;
-        $this->id = $_id;   
+
     }
 
     
@@ -36,9 +37,6 @@ class Product {
         return $this->price;
     }    
 
-    public function getId() {
-        return $this->id;
-    }    
 
     public function setProductName($_product_name){
         $this->product_name = $_product_name;
@@ -54,17 +52,9 @@ class Product {
 
     public function setPrice($_price){
         $this->product_name = $_price;
-    }    
-
-    public function setId($_id){
-        $this->product_name = $_id;
-    }    
-
-
-
-    
+    } 
+       
 }
-
 
 
 ?>

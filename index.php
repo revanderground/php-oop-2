@@ -20,15 +20,17 @@ include_once __DIR__ . '/Classes/Products/Toy.php';
 include_once __DIR__ . '/Classes/Users/User.php';
 include_once __DIR__ . '/Classes/Users/RegisteredUser.php';
 include_once __DIR__ . '/Classes/Users/UnregisteredUser.php';
-include_once __DIR__ . '/Traits/Card.php';
-include_once __DIR__ . '/Traits/DisposalInstructions.php';
+include_once __DIR__ . '/Card.php';
+include_once __DIR__ . '/Traits/codeID.php';
 
 
 $croccantini = new Food("croccantini", "cani", "monge", 45.90, "#12", "dog food", "Salmone e Riso", "adult", "2023-15-14", "12kg" );
 $cuccia= new House('cuccia', 'gatto','LOVEDI','15.99', 'silicone imbottito', '50cm', '60cm', 'blue' );
 $altalena = new Toy ('altalena', 'pappagallo', 'Nobleza', '14.99', 'cotone', 'Spagna', 'multicolore');
 $luciodalla= new Guest ('Lucio','Dalla', "luciodalla@email.com",'#25');
-$card1 = new Card('Lucio Dalla', '2834729849', "2025-10-12", 111); 
+$card1 = new Card("Lucio Dalla", "2873847934", "2024-12-10", 234);
+
+var_dump())
 
 
 ?>

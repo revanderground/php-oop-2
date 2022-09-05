@@ -1,6 +1,6 @@
 <?php
 
-   trait Card{
+   class Card{
       private $owner;
       private $number;
       private $expirationDate;

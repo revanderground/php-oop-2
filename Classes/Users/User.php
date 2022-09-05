@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../../Traits/Card.php';
+require_once __DIR__ . '/../../Card.php';
 
 class User {
     protected $name;
@@ -9,15 +9,13 @@ class User {
     protected $id;
     protected $discount = 0;
 
-    use Card;
 
     protected $cart= [];
 
-    public function __construct($_name, $_surname, $_email, $_id) {
+    public function __construct($_name, $_surname, $_email) {
         $this->name = $_name;
         $this->surname = $_surname;
         $this->email = $_email;
-        $this->id = $_id;
     }
 
     public function addToCart($product) {
