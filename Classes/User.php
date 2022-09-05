@@ -8,7 +8,7 @@ class User {
     protected $email;
     protected $id;
     protected $discount = 0;
-    protected $balance = 0;
+    protected $expirationDate;
 
     protected $cart= [];
 
@@ -42,12 +42,10 @@ class User {
 
 
     public function makePayment() {
-        $amountDue = $this->calculatePrice(); //somma da pagare
-        // var_dump($amountDue);
 
         try{
-            if($this->balance < $amountDue) {
-                throw new Exception("Dear $this->firstName $this->lastName: Balance is not sufficient");
+            if($this->expirationDate > date('Y-m-d')) {
+                throw new Exception("Dear $this->firstName $this->lastName: Your card is expired");
             } else {
                 return 'Acquisto effettuato';
             }
