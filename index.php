@@ -28,6 +28,7 @@ $croccantini = new Food("croccantini", "cani", "monge", 45.90, "#12", "dog food"
 $cuccia= new House('cuccia', 'gatto','LOVEDI','15.99', 'silicone imbottito', '50cm', '60cm', 'blue' );
 $altalena = new Toy ('altalena', 'pappagallo', 'Nobleza', '14.99', 'cotone', 'Spagna', 'multicolore');
 $luciodalla= new Guest ('Lucio','Dalla', "luciodalla@email.com",'#25');
+$robertobaggio = new Member("Roberto", "Baggio", "robybaggio@email.com", "#12", "Altavilla Vicentina", "robybaggio", "123456");
 $card1 = new Card("Lucio Dalla", "2873847934", "2024-12-10", 234);
 
 
@@ -42,6 +43,16 @@ var_dump($luciodalla);
 var_dump($card1);
 
 
+$luciodalla->AddToCart($altalena, $cuccia);
+$luciodalla->AddToCart($cuccia);
+
+var_dump($luciodalla->getCart());
+
+var_dump($luciodalla);
+
+$luciodalla->calculatePrice();
+
+var_dump($luciodalla->calculatePrice());
 
 
 ?>
