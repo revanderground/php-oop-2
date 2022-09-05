@@ -44,7 +44,7 @@ class User {
     public function makePayment() {
 
         try{
-            if($this->expirationDate > date('Y-m-d')) {
+            if($this->expirationDate >= date('Y-m-d')) {
                 throw new Exception("Dear $this->firstName $this->lastName: Your card is expired");
             } else {
                 return 'Acquisto effettuato';
